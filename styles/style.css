@@ -4,6 +4,7 @@
   border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #E4E5EA;
 }
 
 a {
@@ -15,7 +16,12 @@ a:hover {
   color: white;
 }
 
+body {
+  background-color: #0E1014;
+}
+
 .container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,19 +34,16 @@ a:hover {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background-color: #0E1014;
   color: white;
 }
 
 .wrapper {
   width: 1140px;
   background-color: #0E1014;
-  height: 900px;
-  overflow: hidden;
+  height: content;
 }
 
 header {
-  overflow: hidden;
   position: relative;
   height: 73px;
   width: 100%;
@@ -54,6 +57,14 @@ header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+}
+header img:hover {
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 header .header__logo {
   display: -webkit-box;
@@ -195,7 +206,14 @@ header .header_contactLogos a {
       -ms-flex-align: start;
           align-items: start;
   width: 100%;
-  height: 100%;
+}
+.main img:hover {
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 .main .main__left {
   display: -webkit-box;
@@ -263,7 +281,7 @@ header .header_contactLogos a {
       -ms-flex-pack: start;
           justify-content: start;
   width: 291px;
-  height: 100%;
+  height: content;
   padding-top: 15px;
 }
 .main .main__right p {
@@ -286,12 +304,13 @@ header .header_contactLogos a {
 .main .main__right .grid {
   display: -ms-grid;
   display: grid;
-  gap: 35px 31px;
+  gap: 30px 30px;
   padding-top: 40px;
-  -ms-grid-columns: 164px 31px 164px;
+  -ms-grid-columns: 164px 30px 164px;
   grid-template-columns: repeat(2, 164px);
-  -ms-grid-rows: 62px 35px 62px;
+  -ms-grid-rows: 62px 30px 62px;
   grid-template-rows: repeat(2, 62px);
+  color: #E4E5EA;
 }
 .main .main__right .grid > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -323,6 +342,7 @@ header .header_contactLogos a {
   color: #E4E5EA;
 }
 .main .main__right .grid p {
+  opacity: 80%;
   padding-top: 6px;
   font-family: "Montserrat";
   font-style: normal;
@@ -331,4 +351,263 @@ header .header_contactLogos a {
   line-height: 20px;
   text-align: right;
   color: #E4E5EA;
+}
+.main .main__right button {
+  display: block;
+  margin-top: 82px;
+  width: 262px;
+  height: 61px;
+  background-color: #4077F3;
+  color: #E4E5EA;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+.main .main__right button:hover {
+  cursor: pointer;
+  border: 0.3px solid white;
+  color: white;
+}
+
+footer {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* light text */
+  color: #E4E5EA;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+  height: 200px;
+  margin-top: 69px;
+  padding-top: 55px;
+}
+footer img:hover {
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+footer h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #656566;
+}
+footer nav {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer nav a {
+  padding-top: 10px;
+}
+footer nav a:first-child {
+  padding-top: 0px;
+}
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+footer div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer div:nth-child(2) .secgrid {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+footer div:nth-child(2) .secgrid a {
+  padding-top: 10px;
+}
+footer div:nth-child(2) .secgrid a:first-child {
+  padding-top: 0px;
+}
+footer div:nth-child(2) .secgrid div:nth-child(2) {
+  padding-left: 52px;
+}
+footer div:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  text-align: right;
+}
+footer div:nth-child(3) h3 {
+  text-align: right;
+}
+footer div:nth-child(3) .footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 78.33px;
+}
+footer div:nth-child(3) .footer__logo a {
+  padding-top: 22px;
+}
+footer div:nth-child(3) .footer__logo a img {
+  width: 100%;
+  height: 100%;
+}
+footer div:nth-child(3) .way {
+  padding-top: 20px;
+}
+footer div:nth-child(3) .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 70px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: right;
+  /* light text */
+  color: #E4E5EA;
+}
+footer div:nth-child(3) .copyright a {
+  padding-top: 5px;
+  text-decoration: underline;
+}
+
+.ball_one {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 868px;
+  top: -2px;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
+  -webkit-box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+          box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  z-index: 0;
+}
+
+.ball_two {
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  left: 519px;
+  top: 83px;
+  z-index: 0;
+}
+
+.ball_three {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 851px;
+  top: 547px;
+  -webkit-box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+          box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  -webkit-filter: blur(2.5px);
+          filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.ball_five {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  left: 602px;
+  top: -154px;
+  background: #833AB4;
+  opacity: 0.5;
+  -webkit-filter: blur(196px);
+          filter: blur(196px);
+  z-index: 0;
+}
+
+.ball_four {
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  left: -102px;
+  top: 251px;
+  background: #961A1A;
+  opacity: 0.5;
+  -webkit-filter: blur(196px);
+          filter: blur(196px);
+  z-index: 0;
 }
