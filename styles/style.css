@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #E4E5EA;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #0E1014;
+  color: white;
+}
+
+.wrapper {
+  width: 1140px;
+  background-color: #0E1014;
+  height: 900px;
+  overflow: hidden;
+}
+
+header {
+  overflow: hidden;
+  position: relative;
+  height: 73px;
+  width: 100%;
+  margin-top: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+header .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 165px;
+  height: 100%;
+}
+header .header__logo .header__imgLogo {
+  margin-top: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header__logo .logo-2 {
+  padding-left: 8.12px;
+}
+header .header__logo p {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+  font-size: 10px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 12px;
+  color: #E4E5EA;
+}
+header .abs {
+  display: none;
+  position: absolute;
+  left: 192px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+header .header__nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 503px;
+  height: 19px;
+  margin-left: 27px;
+  margin-top: 15px;
+}
+header .header__nav a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E4E5EA;
+  text-decoration: none;
+}
+header .header__nav a:hover {
+  text-decoration: underline;
+  color: white;
+}
+header .header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: content;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-top: 15px;
+  margin-left: 137px;
+  width: 143px;
+}
+header .header__contacts a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E4E5EA;
+}
+header .header_contactLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: content;
+  height: 100%;
+  margin-left: 20px;
+  padding-top: 17.01px;
+}
+header .header_contactLogos a {
+  padding-left: 34px;
+}
+
+.main {
+  padding-top: 90px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 0;
+}
+.main .main__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 362px;
+  height: 338px;
+  border-radius: 1px solid black;
+}
+.main .main__left p:first-child {
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #E4E5EA;
+}
+.main .main__left p:nth-child(2) {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 247px;
+  height: 58px;
+}
+.main .main__left p:nth-child(3) {
+  padding-top: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* light text */
+  color: #E4E5EA;
+}
+.main .main__right {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  background-color: yellow;
+  flex-direction: column;
+}
+.main .main__right p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  padding-top: 15px;
+  color: #E4E5EA;
+  width: 291px;
+  height: 44px;
+  text-align: end;
+}
+.main .main__right p span {
+  letter-spacing: 1px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(36.99%, #FCB045), to(#FD1D1D)), -webkit-gradient(linear, left bottom, left top, from(#E4E5EA), to(#E4E5EA));
+  background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%), linear-gradient(0deg, #E4E5EA, #E4E5EA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
