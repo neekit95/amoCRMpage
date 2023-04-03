@@ -872,8 +872,8 @@ footer div:nth-child(3) .copyright a {
     text-transform: uppercase;
   }
   body {
-    width: 100vw;
-    height: 100%;
+    width: 420px;
+    overflow: hidden;
   }
   .main {
     position: relative;
