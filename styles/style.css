@@ -873,7 +873,7 @@ footer div:nth-child(3) .copyright a {
   }
   body {
     width: 420px;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .main {
     position: relative;
